@@ -1,0 +1,23 @@
+apply plugin: "java"
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+    }
+}
+
+sourceSets.main.java.srcDirs = ["gdx-shaders/src/"]
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+ext.gdxVersion = '1.4.2-SNAPSHOT';
+dependencies {
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+}
