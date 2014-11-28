@@ -30,7 +30,7 @@ import com.badlogic.gdx.utils.ObjectMap.Keys;
  */
 public class ShaderManager {
 	
-	public static final String SHADER_CLASSPATH = "com/thesecretpie/shader/shaders";
+	public static final String SHADER_CLASSPATH = "gdx-shaders/src/" + "com/thesecretpie/shader/shaders"; // added gdx-shaders/src/ to work with the project layout
 	public static int MAX_FRAMEBUFFERS = 10;
 	public static int FRAMEBUFFER_TEXTURE_ID = 0;
 
