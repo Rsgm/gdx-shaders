@@ -575,13 +575,13 @@ public class ShaderManager {
 		String vertPath = shaderDir + "/" + baseVertPath;
 		vertFh = Gdx.files.internal(vertPath);
 		if (!vertFh.exists()) {
-			vertFh = Gdx.files.classpath(SHADER_CLASSPATH + "/" + baseVertPath);
+			vertFh = Gdx.files.internal(SHADER_CLASSPATH + "/" + baseVertPath);
 			vertPath = vertFh.path();
 		}
 		String fragPath = shaderDir + "/" + baseFragPath;
 		fragFh = Gdx.files.internal(fragPath);
 		if (!fragFh.exists()) {
-			fragFh = Gdx.files.classpath(SHADER_CLASSPATH + "/" + baseFragPath);
+			fragFh = Gdx.files.internal(SHADER_CLASSPATH + "/" + baseFragPath);
 			fragPath = fragFh.path();
 		}
 		
